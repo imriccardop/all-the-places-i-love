@@ -15,6 +15,44 @@
     font-weight: bold;
     height: 33px;
     line-height: 37px;
-    text-align: center;
+    text-align: center !important;
+    border-radius: 50%;
+    display: flex; /* or inline-flex */
+    align-items: center;
+    justify-content: center;
     width: 33px;
   }
+
+.info{
+  position:absolute;
+  z-index: 2;
+}
+
+.custom-bedge{
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.custom-bedge_pub_color{
+  background-color: #FFAFF0;
+  color: #fff;
+}
+
+.custom-bedge_shop_color{
+  background-color: #FB8B24;
+  color: #fff;
+}
+
+.custom-bedge_other_color{
+  background-color: #81F0E5;
+  color: #fff;
+}
