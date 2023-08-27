@@ -1,10 +1,13 @@
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { useState } from 'react';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import MarkerClusterGroup from 'react-leaflet-cluster';
 import './App.css';
 import { placeInfoList } from './pin-list.js';
+
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 
 const customIconOther = new L.Icon({
@@ -48,7 +51,7 @@ function findCustonBedgeClass(placeInfo){
 
 function findWebsite(placeInfo){
   if(placeInfo.website !== '' && placeInfo.website !== null ){
-    return <a href={placeInfo.website} target="_blank">Website</a>;
+    return <a href={placeInfo.website} target="_blank" rel="noreferrer" >Website</a>;
   }
   return <div></div>;
 }
@@ -63,12 +66,18 @@ const createClusterCustomIcon = function (cluster) {
 
 
 function App() {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
 
   return (
+    <>
+    <Navbar bg="light" data-bs-theme="light">
+        <Container>
+          <Navbar.Brand href="#">All the places I love</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="/list">List of places</Nav.Link>
+            <Nav.Link href="/about">About</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
     <div className='leaflet-container'>
       <MapContainer center={[51.505, -0.09]} zoom={5} scrollWheelZoom={false}>
         <TileLayer
@@ -81,13 +90,12 @@ function App() {
             placeInfoList.map(e => {
               return <Marker icon={findCustomPin(e)} position={[e.latitude, e.longitude]}>
                 <Popup>
-                <span className={findCustonBedgeClass(e)}>{e.type}</span>
+                  <span className={findCustonBedgeClass(e)}>{e.type}</span>
                   <h5>{e.title} </h5>
                   <div>{e.description}</div>
                   <br />
                   <div>{findWebsite(e)}</div>
                   <a href={e.gMapUrl} target="_blank">Google Maps</a>
-
                 </Popup>
               </Marker>;
             })
@@ -95,6 +103,7 @@ function App() {
         </MarkerClusterGroup>
       </MapContainer>
     </div>
+    </>
   );
 }
 
