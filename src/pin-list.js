@@ -215,6 +215,15 @@ export const placeInfoList= [
         description: "In my honest opinion the best Schnitzel",
         website: "http://www.scheers-schnitzel.de/"
     },
+    { 
+        latitude:45.4141616629825, 
+        longitude: 11.876248946900832,
+        type: "PUB", // type[PUB,SHOP,OTHERS]
+        title: "FORAMODA", 
+        gMapUrl: "", 
+        description: "Best Pub in town, best craft beers and nice people."
+    },
+    
     /*
     { 
         latitude:, 
