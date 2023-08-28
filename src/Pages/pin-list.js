@@ -2,7 +2,7 @@ export const placeInfoList= [
     { 
         latitude:52.49548673965988, 
         longitude: 13.396947082068747, 
-        type: "SHOP", // type[PUB,SHOP,OTHERS]
+        type: "SHOP", // type[PUB,SHOP,OTHERS],
         title: "All the problems in this world", 
         gMapUrl: "https://goo.gl/maps/kBm8d5EPRqUFs77AA", 
         description: "It is aconcentrating on a carefully selected range of imported small press, self-published and classic role-playing games, graphic novels, artist books and fantasy music.",
@@ -215,15 +215,30 @@ export const placeInfoList= [
         description: "In my honest opinion the best Schnitzel",
         website: "http://www.scheers-schnitzel.de/"
     },
-    { 
-        latitude:45.4141616629825, 
-        longitude: 11.876248946900832,
-        type: "PUB", // type[PUB,SHOP,OTHERS]
-        title: "FORAMODA", 
-        gMapUrl: "", 
-        description: "Best Pub in town, best craft beers and nice people."
+    {
+    latitude:45.4141616629825, 
+    longitude: 11.876248946900832,
+    type: "PUB", // type[PUB,SHOP,OTHERS]
+    title: "FORAMODA", 
+    gMapUrl: "https://goo.gl/maps/YUtaXVHVQKQ72mFL9", 
+    description: "Best Pub in town, best craft beers and nice people."
     },
-    
+    {
+        latitude:45.41486766860707, 
+        longitude: 11.875188670295703,
+        type: "PUB", // type[PUB,SHOP,OTHERS]
+        title: "FATTY PATTY", 
+        gMapUrl: "https://goo.gl/maps/PZmbmLFFWEnMApFy5", 
+        description: "Smash burgers in Padua, hafl mc donald, half starbucks"
+     },
+     {
+        latitude:45.40828698296228,
+        longitude: 11.879117636716993,
+        type: "SHOP", // type[PUB,SHOP,OTHERS]
+        title: "Libreria Zabarella", 
+        gMapUrl: "https://goo.gl/maps/4LpZcUH4kAZnGJFe7", 
+        description: "Best indipendent book store in Padua"
+     }
     /*
     { 
         latitude:, 
