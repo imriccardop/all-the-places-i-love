@@ -73,8 +73,7 @@ function App() {
         <Container>
           <Navbar.Brand href="#">All the places I love</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="/list">List of places</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link href="/about">?</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
