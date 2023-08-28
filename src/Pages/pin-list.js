@@ -1,4 +1,5 @@
 export const placeInfoList= [
+    //BERLIN
     { 
         latitude:52.49548673965988, 
         longitude: 13.396947082068747, 
@@ -215,6 +216,7 @@ export const placeInfoList= [
         description: "In my honest opinion the best Schnitzel",
         website: "http://www.scheers-schnitzel.de/"
     },
+    //PADUA
     {
     latitude:45.4141616629825, 
     longitude: 11.876248946900832,
@@ -238,7 +240,17 @@ export const placeInfoList= [
         title: "Libreria Zabarella", 
         gMapUrl: "https://goo.gl/maps/4LpZcUH4kAZnGJFe7", 
         description: "Best indipendent book store in Padua"
-     }
+     },
+
+     {
+        latitude:51.513843507438324, 
+        longitude: -0.13415598256852393,
+        type: "SHOP", // type[PUB,SHOP,OTHERS]
+        title: "Gosh! Comics", 
+        gMapUrl: "https://goo.gl/maps/4LpZcUH4kAZnGJFe7", 
+        description: "Amazing comic book store with many independent comics from small publishers. the best comic book store I've ever seen.",
+        website: "http://www.goshlondon.com/"
+     },
     /*
     { 
         latitude:, 
