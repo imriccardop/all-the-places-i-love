@@ -21,4 +21,6 @@ code {
 .body-margin{
   margin:    0 auto;
   max-width: 900px;
+  margin-left: 2.5vb;
+  margin-right: 2.5vb;
 }

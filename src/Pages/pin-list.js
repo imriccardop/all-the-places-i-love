@@ -241,7 +241,38 @@ export const placeInfoList= [
         gMapUrl: "https://goo.gl/maps/4LpZcUH4kAZnGJFe7", 
         description: "Best indipendent book store in Padua"
      },
-
+     {
+        latitude:45.40866567379613, 
+        longitude: 11.881455757314576,
+        type: "PUB", // type[PUB,SHOP,OTHERS]
+        title: "Il Riccio a caccia di focaccia", 
+        gMapUrl: "https://maps.app.goo.gl/EBu7StEXWucPaq7u6", 
+        description: "Best place for eat \"focaccia\" in padua, sorry i don't know the translation of it. Anyway good place, good food and nice place."
+     },
+     {
+        latitude:45.40861485022809, 
+        longitude: 11.881023927387165,
+        type: "SHOP", // type[PUB,SHOP,OTHERS]
+        title: "Libreria Libraccio", 
+        gMapUrl: "https://maps.app.goo.gl/FcYEqPsz4c8LkNaG7", 
+        description: "An other great book store."
+     },
+    {
+     latitude:45.40893920234769,  
+     longitude: 11.879727749649405,
+     type: "PUB", // type[PUB,SHOP,OTHERS]
+     title: "Coffee Box", 
+     gMapUrl: "https://maps.app.goo.gl/KqpCUXbezxj8TbEy7", 
+     description: "C'mon the description it isn't necessary"
+    },
+    {
+        latitude:45.40722520801065,
+        longitude: 11.891740483519552,
+        type: "PUB", // type[PUB,SHOP,OTHERS]
+        title: "Red velvet", 
+        gMapUrl: "https://maps.app.goo.gl/Zq1RdNvbxqaS4q4w8", 
+        description: "C'mon the description it isn't necessary, a great backery with vegan options."
+       },
      {
         latitude:51.513843507438324, 
         longitude: -0.13415598256852393,
