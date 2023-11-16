@@ -50,10 +50,10 @@ function findCustonBedgeClass(placeInfo){
 }
 
 function findWebsite(placeInfo){
-  if(placeInfo.website !== '' && placeInfo.website !== null ){
-    return <a href={placeInfo.website} target="_blank" rel="noreferrer" >Website</a>;
+  if(typeof placeInfo.website === 'undefined' || placeInfo.website === null || placeInfo.website.length === 0){
+    return <div></div>;
   }
-  return <div></div>;
+  return <a href={placeInfo.website} target="_blank" rel="noreferrer" >Website</a>;
 }
 
 const createClusterCustomIcon = function (cluster) {
@@ -78,7 +78,7 @@ function App() {
         </Container>
       </Navbar>
     <div className='leaflet-container'>
-      <MapContainer center={[51.505, -0.09]} zoom={5} scrollWheelZoom={false}>
+      <MapContainer center={[51.505, -0.09]} zoom={5} scrollWheelZoom={true}>
         <TileLayer
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.jawg.io/jawg-dark/{z}/{x}/{y}{r}.png?access-token={accessToken}"
